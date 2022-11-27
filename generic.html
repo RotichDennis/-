@@ -19,22 +19,17 @@
 
 				<!-- Header -->
 					<header id="header">
-						<a href="index.html" class="logo">Massively</a>
+						<a href="index.html" class="logo">Data Analytics</a>
 					</header>
 
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-							<li><a href="index.html">This is Massively</a></li>
-							<li class="active"><a href="generic.html">Generic Page</a></li>
+							<li><a href="index.html">Projects</a></li>
+							<li class="active"><a href="generic.html">Case study 1</a></li>
 							<li><a href="elements.html">Elements Reference</a></li>
 						</ul>
-						<ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
+						
 					</nav>
 
 				<!-- Main -->
@@ -43,68 +38,77 @@
 						<!-- Post -->
 							<section class="post">
 								<header class="major">
-									<span class="date">April 25, 2017</span>
-									<h1>This is a<br />
-									Generic Page</h1>
-									<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam<br />
-									facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor<br />
-									amet nullam sed etiam veroeros.</p>
+									<span class="date">August 5, 2022</span>
+									<h1>BellaBeat Fitness <br />
+									A Case Study</h1>
+									<p>Smart devices are a big part of people’s everyday life. As a smart device manufacturer,<br />
+										Bellabeat can benefit from learning the trend of smart device usage and 
+										make data-driven business strategies to explore opportunities for growth.</p>
 								</header>
-								<div class="image main"><img src="images/pic01.jpg" alt="" /></div>
-								<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur sapien risus, commodo eget turpis at, elementum convallis enim turpis, lorem ipsum dolor sit amet nullam.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus. Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum.</p>
+								<div class="image main"><img src="images/bellabeat.jpg" alt="" /></div>
+
+								<p>Key Questions <br />
+									1. What are some trends in smart device usage?<br />
+									2. How could these trends apply to Bellabeat customers?<br />
+									3. How could these trends help influence Bellabeat marketing strategy?. <br />
+								<p>
+								<h2><a href="#">Data Preparation and Processing <br />
+								</a></h2>
+									<p>
+									The data set to be used is a public data set available through Kaggle and contains personal fitness tracker from thirty fitbit users.
+									The data set includes 18 csv files that capture everything from daily activity, calories (daily, hourly and by minute), intensities (daily, hourly and by minute), number of steps (daily, hourly and by minute), heart rate, minute METs, sleep (Day and minute) and weight log info.
+									For the scope of this data analysis only a selection of the 18 data sets that were deemed relevant in addressing the business task were imported into RStudio.
+									
+									</p>
+								<p>
+									BELLABEAT BIG QUERY INPUTS<br />
+									Using the Google BigQuery platform, I selected the required data for analysis and this can be seen using the link below. 
+									<ul class="actions special">
+										<li><a href="https://github.com/RotichDennis/PortfolioProjects/blob/main/Bellabeat%20BigQuery%20Analysis.sql" class="button">SQL analysis</a></li>
+									</ul>
+									Hypothesis has been made with the data available on activity, sleep time and weight.<br />
+									1. There is a relationship between activity level and calories burnt.<br />
+									2. There is a relationship between activity level and sleep time.<br />
+									3. There is a relationship between activity level and weight.<br />
+									In order to find out the relation and validate the hypothesis, four queries have been constructed to aggregate the data for analysis.<br />
+								</p>
+								<h2><a href="#">Data vizualization on the three components <br />
+								</a></h2>
+								<p>
+								1. Activity level and calories burnt relation
+								<a href class="image fit"><img src="images/bell.png" alt="" <br />
+								From the above chart we can see that a person who has higher active minutes tends to burn more calories in a day, 
+								the more time they spend inactive, the lower calories they tend to burn in a day.
+							<p>
+								<p>
+									2. Activity level and sleep quality relation
+									<a href class="image fit"><img src="images/beat.png" alt="" <br />
+									From the above chart we can see that a person who has higher active minutes tends to burn more calories in a day, 
+									the more time they spend inactive, the lower calories they tend to burn in a day.
+								<p>
+
+								<p>
+										Recommendation and act<br />
+										Conclusion<br />
+										From the analysis result, it is clear that there is a clear trend in non-active people having a negative lifestyle. 
+										The three relations we found during the analysis includes:<br />
+										1. Very-active minutes has a positive relation to calories burnt <br />
+										2. Active person has a positive relation to sleep quality <br />
+										3. Non-active person is more likely to have a high BMI<br />
+										Recommendations to business<br />
+										As these relations are the analysis results of participants who use smart devices to track their activity statistics, 
+										we can apply these to make data-driven decisions on Bellabeat future products/functionality:<br />
+										Bellabeat can include function in Bellabeat app to alert user who tends to have a high number to sedentary minutes<br />
+										Bellabeat can include timely notification in Leaf/Time to motivate user to move around regularly to reduce their sedentary minutes<br />
+										Bellabeat can use the relation between high sedentary minutes and BMI to promote an active lifestyle can reduce body fat and create better health with Bellabeat products<br />
+										Bellabeat can further enhance their sleep tracking function to promote the sleep/non-active relation. Use this as an incentive to purchase Bellabeat products: create a better sleeping habit by being more active in everyday life.<br />
+									<p>
 							</section>
 
 					</div>
 
 				<!-- Footer -->
-					<footer id="footer">
-						<section>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="3"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-						</section>
-						<section class="split contact">
-							<section class="alt">
-								<h3>Address</h3>
-								<p>1234 Somewhere Road #87257<br />
-								Nashville, TN 00000-0000</p>
-							</section>
-							<section>
-								<h3>Phone</h3>
-								<p><a href="#">(000) 000-0000</a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="#">info@untitled.tld</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
+					
 
 				<!-- Copyright -->
 					<div id="copyright">
